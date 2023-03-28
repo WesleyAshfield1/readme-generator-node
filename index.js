@@ -6,14 +6,29 @@ const inquirer = require('inquirer');
 const questions = [
     {
         type: 'input',
-        name: 'title',
-        message: 'What is your name?',
+        name: 'filePath',
+        message: 'Enter the file path where you want to create the README.md (please include README.md in your Pathing):',
     },
     {
         type: 'input',
-        name: 'hello',
-        message: 'What is your age?',
+        name: 'NameProject',
+        message: 'Enter the name of the project:',
     },
+    {
+        type: 'input',
+        name: 'describe',
+        message: 'Enter the description of the project:',
+      },
+      {
+        type: 'input',
+        name: 'insttruct',
+        message: 'Describe how to use the project',
+      },
+      {
+        type: 'input',
+        name: 'liscence',
+        message: 'What is the liscense of your project?'
+      }
 ];
 
 // TODO: Create a function to write README file
